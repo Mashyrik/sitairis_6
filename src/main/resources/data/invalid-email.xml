@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://sitairis.com/library"><readers>
+  <reader id="1"><fullName>Тестовый Читатель</fullName><email>wrong-email</email><phone>+375291112233</phone><registrationDate>2026-01-01</registrationDate><active>true</active></reader>
+</readers><books>
+  <book id="1"><title>Тестовая книга</title><author>Тестовый Автор</author><isbn>978-5-0000-0000-1</isbn><publicationYear>2026</publicationYear><status>AVAILABLE</status></book>
+</books><loans>
+  <loan id="1"><readerId>1</readerId><bookId>1</bookId><issueDate>2026-01-01</issueDate><dueDate>2026-01-20</dueDate><status>ACTIVE</status><fineAmount>0.00</fineAmount></loan>
+</loans></library>

@@ -1,0 +1,53 @@
+{
+  "readers": [
+    {"id":1,"fullName":"Иванов Иван Иванович","email":"ivanov@example.com","phone":"+375291112233","registrationDate":"2025-09-01","active":true},
+    {"id":2,"fullName":"Петрова Анна Сергеевна","email":"petrova@example.com","phone":"+375292223344","registrationDate":"2025-09-03","active":true},
+    {"id":3,"fullName":"Сидоров Максим Олегович","email":"sidorov@example.com","phone":"+375293334455","registrationDate":"2025-09-05","active":true},
+    {"id":4,"fullName":"Ковалёва Мария Андреевна","email":"kovaleva@example.com","phone":"+375294445566","registrationDate":"2025-09-07","active":true},
+    {"id":5,"fullName":"Новик Алексей Павлович","email":"novik@example.com","phone":"+375295556677","registrationDate":"2025-09-09","active":false},
+    {"id":6,"fullName":"Мороз Елена Викторовна","email":"moroz@example.com","phone":"+375296667788","registrationDate":"2025-09-11","active":true},
+    {"id":7,"fullName":"Волков Дмитрий Игоревич","email":"volkov@example.com","phone":"+375297778899","registrationDate":"2025-09-13","active":true},
+    {"id":8,"fullName":"Лебедева Ольга Романовна","email":"lebedeva@example.com","phone":"+375298889900","registrationDate":"2025-09-15","active":true},
+    {"id":9,"fullName":"Козлов Артём Денисович","email":"kozlov@example.com","phone":"+375299990011","registrationDate":"2025-09-17","active":true},
+    {"id":10,"fullName":"Соколова Дарья Михайловна","email":"sokolova@example.com","phone":"+375251101122","registrationDate":"2025-09-19","active":true},
+    {"id":11,"fullName":"Орлов Никита Сергеевич","email":"orlov@example.com","phone":"+375252202233","registrationDate":"2025-09-21","active":true},
+    {"id":12,"fullName":"Зайцева Полина Ильинична","email":"zaitseva@example.com","phone":"+375253303344","registrationDate":"2025-09-23","active":true},
+    {"id":13,"fullName":"Мельник Кирилл Антонович","email":"melnik@example.com","phone":"+375254404455","registrationDate":"2025-09-25","active":true},
+    {"id":14,"fullName":"Романова София Евгеньевна","email":"romanova@example.com","phone":"+375255505566","registrationDate":"2025-09-27","active":true},
+    {"id":15,"fullName":"Белов Андрей Константинович","email":"belov@example.com","phone":"+375256606677","registrationDate":"2025-09-29","active":true}
+  ],
+  "books": [
+    {"id":1,"title":"Мастер и Маргарита","author":"Михаил Булгаков","isbn":"978-5-17-118366-6","publicationYear":1967,"status":"ISSUED"},
+    {"id":2,"title":"Чистый код","author":"Роберт Мартин","isbn":"978-5-4461-0960-9","publicationYear":2008,"status":"ISSUED"},
+    {"id":3,"title":"Война и мир","author":"Лев Толстой","isbn":"978-5-389-06256-6","publicationYear":1869,"status":"ISSUED"},
+    {"id":4,"title":"Java. Полное руководство","author":"Герберт Шилдт","isbn":"978-5-6040723-5-2","publicationYear":2022,"status":"ISSUED"},
+    {"id":5,"title":"Совершенный код","author":"Стив Макконнелл","isbn":"978-5-7502-0064-1","publicationYear":2004,"status":"ISSUED"},
+    {"id":6,"title":"Преступление и наказание","author":"Фёдор Достоевский","isbn":"978-5-389-06245-0","publicationYear":1866,"status":"LOST"},
+    {"id":7,"title":"Effective Java","author":"Joshua Bloch","isbn":"978-0-13-468599-1","publicationYear":2018,"status":"AVAILABLE"},
+    {"id":8,"title":"Отцы и дети","author":"Иван Тургенев","isbn":"978-5-389-07406-4","publicationYear":1862,"status":"AVAILABLE"},
+    {"id":9,"title":"Паттерны объектно-ориентированного проектирования","author":"Эрих Гамма","isbn":"978-5-4461-1595-2","publicationYear":1994,"status":"AVAILABLE"},
+    {"id":10,"title":"Анна Каренина","author":"Лев Толстой","isbn":"978-5-389-06244-3","publicationYear":1878,"status":"AVAILABLE"},
+    {"id":11,"title":"Spring в действии","author":"Крейг Уоллс","isbn":"978-5-4461-1434-4","publicationYear":2022,"status":"AVAILABLE"},
+    {"id":12,"title":"Герой нашего времени","author":"Михаил Лермонтов","isbn":"978-5-389-07730-0","publicationYear":1840,"status":"AVAILABLE"},
+    {"id":13,"title":"Рефакторинг","author":"Мартин Фаулер","isbn":"978-5-4461-1596-9","publicationYear":2019,"status":"AVAILABLE"},
+    {"id":14,"title":"Евгений Онегин","author":"Александр Пушкин","isbn":"978-5-389-07408-8","publicationYear":1833,"status":"AVAILABLE"},
+    {"id":15,"title":"Алгоритмы. Построение и анализ","author":"Томас Кормен","isbn":"978-5-8459-2016-4","publicationYear":2022,"status":"AVAILABLE"}
+  ],
+  "loans": [
+    {"id":1,"readerId":1,"bookId":1,"issueDate":"2026-10-20","dueDate":"2026-11-10","returnDate":null,"status":"ACTIVE","fineAmount":0.00},
+    {"id":2,"readerId":2,"bookId":2,"issueDate":"2026-10-01","dueDate":"2026-10-22","returnDate":null,"status":"OVERDUE","fineAmount":0.00},
+    {"id":3,"readerId":3,"bookId":3,"issueDate":"2026-10-25","dueDate":"2026-11-15","returnDate":null,"status":"ACTIVE","fineAmount":0.00},
+    {"id":4,"readerId":4,"bookId":4,"issueDate":"2026-10-10","dueDate":"2026-10-31","returnDate":null,"status":"OVERDUE","fineAmount":0.00},
+    {"id":5,"readerId":6,"bookId":5,"issueDate":"2026-10-28","dueDate":"2026-11-18","returnDate":null,"status":"ACTIVE","fineAmount":0.00},
+    {"id":6,"readerId":7,"bookId":7,"issueDate":"2026-08-01","dueDate":"2026-08-22","returnDate":"2026-08-20","status":"RETURNED","fineAmount":0.00},
+    {"id":7,"readerId":8,"bookId":8,"issueDate":"2026-08-05","dueDate":"2026-08-26","returnDate":"2026-08-29","status":"RETURNED","fineAmount":4.50},
+    {"id":8,"readerId":9,"bookId":9,"issueDate":"2026-08-10","dueDate":"2026-08-31","returnDate":"2026-08-31","status":"RETURNED","fineAmount":0.00},
+    {"id":9,"readerId":10,"bookId":10,"issueDate":"2026-08-15","dueDate":"2026-09-05","returnDate":"2026-09-12","status":"RETURNED","fineAmount":10.50},
+    {"id":10,"readerId":11,"bookId":11,"issueDate":"2026-08-20","dueDate":"2026-09-10","returnDate":"2026-09-08","status":"RETURNED","fineAmount":0.00},
+    {"id":11,"readerId":12,"bookId":12,"issueDate":"2026-09-01","dueDate":"2026-09-22","returnDate":"2026-09-25","status":"RETURNED","fineAmount":4.50},
+    {"id":12,"readerId":13,"bookId":13,"issueDate":"2026-09-05","dueDate":"2026-09-26","returnDate":"2026-09-20","status":"RETURNED","fineAmount":0.00},
+    {"id":13,"readerId":14,"bookId":14,"issueDate":"2026-09-10","dueDate":"2026-10-01","returnDate":"2026-10-02","status":"RETURNED","fineAmount":1.50},
+    {"id":14,"readerId":15,"bookId":15,"issueDate":"2026-09-15","dueDate":"2026-10-06","returnDate":"2026-10-06","status":"RETURNED","fineAmount":0.00},
+    {"id":15,"readerId":1,"bookId":6,"issueDate":"2026-07-01","dueDate":"2026-07-22","returnDate":"2026-08-01","status":"RETURNED","fineAmount":15.00}
+  ]
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:lib="http://sitairis.com/library"
+           targetNamespace="http://sitairis.com/library"
+           elementFormDefault="qualified">
+
+  <xs:simpleType name="positiveId">
+    <xs:restriction base="xs:positiveInteger"><xs:maxInclusive value="999999"/></xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="5"/><xs:maxLength value="100"/>
+      <xs:pattern value="[^@\s]+@[^@\s]+\.[^@\s]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="phoneType">
+    <xs:restriction base="xs:string"><xs:pattern value="\+375(25|29|33|44)[0-9]{7}"/></xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="isbnType">
+    <xs:restriction base="xs:string"><xs:pattern value="(97(8|9)-)?[0-9-]{10,17}"/></xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="bookStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="AVAILABLE"/><xs:enumeration value="ISSUED"/><xs:enumeration value="LOST"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="loanStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVE"/><xs:enumeration value="OVERDUE"/><xs:enumeration value="RETURNED"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="readers">
+          <xs:complexType><xs:sequence>
+            <xs:element name="reader" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType><xs:sequence>
+                <xs:element name="fullName"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="5"/><xs:maxLength value="120"/></xs:restriction></xs:simpleType></xs:element>
+                <xs:element name="email" type="lib:emailType"/>
+                <xs:element name="phone" type="lib:phoneType"/>
+                <xs:element name="registrationDate" type="xs:date"/>
+                <xs:element name="active" type="xs:boolean"/>
+              </xs:sequence><xs:attribute name="id" type="lib:positiveId" use="required"/></xs:complexType>
+            </xs:element>
+          </xs:sequence></xs:complexType>
+        </xs:element>
+        <xs:element name="books">
+          <xs:complexType><xs:sequence>
+            <xs:element name="book" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType><xs:sequence>
+                <xs:element name="title"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="1"/><xs:maxLength value="200"/></xs:restriction></xs:simpleType></xs:element>
+                <xs:element name="author"><xs:simpleType><xs:restriction base="xs:string"><xs:minLength value="3"/><xs:maxLength value="120"/></xs:restriction></xs:simpleType></xs:element>
+                <xs:element name="isbn" type="lib:isbnType"/>
+                <xs:element name="publicationYear"><xs:simpleType><xs:restriction base="xs:gYear"><xs:minInclusive value="1450"/><xs:maxInclusive value="2026"/></xs:restriction></xs:simpleType></xs:element>
+                <xs:element name="status" type="lib:bookStatus"/>
+              </xs:sequence><xs:attribute name="id" type="lib:positiveId" use="required"/></xs:complexType>
+            </xs:element>
+          </xs:sequence></xs:complexType>
+        </xs:element>
+        <xs:element name="loans">
+          <xs:complexType><xs:sequence>
+            <xs:element name="loan" minOccurs="1" maxOccurs="unbounded">
+              <xs:complexType><xs:sequence>
+                <xs:element name="readerId" type="lib:positiveId"/>
+                <xs:element name="bookId" type="lib:positiveId"/>
+                <xs:element name="issueDate" type="xs:date"/>
+                <xs:element name="dueDate" type="xs:date"/>
+                <xs:element name="returnDate" type="xs:date" minOccurs="0"/>
+                <xs:element name="status" type="lib:loanStatus"/>
+                <xs:element name="fineAmount"><xs:simpleType><xs:restriction base="xs:decimal"><xs:minInclusive value="0"/><xs:fractionDigits value="2"/><xs:totalDigits value="8"/></xs:restriction></xs:simpleType></xs:element>
+              </xs:sequence><xs:attribute name="id" type="lib:positiveId" use="required"/></xs:complexType>
+            </xs:element>
+          </xs:sequence></xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="readerKey"><xs:selector xpath="lib:readers/lib:reader"/><xs:field xpath="@id"/></xs:key>
+    <xs:key name="bookKey"><xs:selector xpath="lib:books/lib:book"/><xs:field xpath="@id"/></xs:key>
+    <xs:key name="loanKey"><xs:selector xpath="lib:loans/lib:loan"/><xs:field xpath="@id"/></xs:key>
+    <xs:keyref name="loanReaderRef" refer="lib:readerKey"><xs:selector xpath="lib:loans/lib:loan"/><xs:field xpath="lib:readerId"/></xs:keyref>
+    <xs:keyref name="loanBookRef" refer="lib:bookKey"><xs:selector xpath="lib:loans/lib:loan"/><xs:field xpath="lib:bookId"/></xs:keyref>
+  </xs:element>
+</xs:schema>

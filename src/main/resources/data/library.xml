@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://sitairis.com/library"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://sitairis.com/library library.xsd">
+  <readers>
+    <reader id="1"><fullName>Иванов Иван Иванович</fullName><email>ivanov@example.com</email><phone>+375291112233</phone><registrationDate>2025-09-01</registrationDate><active>true</active></reader>
+    <reader id="2"><fullName>Петрова Анна Сергеевна</fullName><email>petrova@example.com</email><phone>+375292223344</phone><registrationDate>2025-09-03</registrationDate><active>true</active></reader>
+    <reader id="3"><fullName>Сидоров Максим Олегович</fullName><email>sidorov@example.com</email><phone>+375293334455</phone><registrationDate>2025-09-05</registrationDate><active>true</active></reader>
+    <reader id="4"><fullName>Ковалёва Мария Андреевна</fullName><email>kovaleva@example.com</email><phone>+375294445566</phone><registrationDate>2025-09-07</registrationDate><active>true</active></reader>
+    <reader id="5"><fullName>Новик Алексей Павлович</fullName><email>novik@example.com</email><phone>+375295556677</phone><registrationDate>2025-09-09</registrationDate><active>false</active></reader>
+    <reader id="6"><fullName>Мороз Елена Викторовна</fullName><email>moroz@example.com</email><phone>+375296667788</phone><registrationDate>2025-09-11</registrationDate><active>true</active></reader>
+    <reader id="7"><fullName>Волков Дмитрий Игоревич</fullName><email>volkov@example.com</email><phone>+375297778899</phone><registrationDate>2025-09-13</registrationDate><active>true</active></reader>
+    <reader id="8"><fullName>Лебедева Ольга Романовна</fullName><email>lebedeva@example.com</email><phone>+375298889900</phone><registrationDate>2025-09-15</registrationDate><active>true</active></reader>
+    <reader id="9"><fullName>Козлов Артём Денисович</fullName><email>kozlov@example.com</email><phone>+375299990011</phone><registrationDate>2025-09-17</registrationDate><active>true</active></reader>
+    <reader id="10"><fullName>Соколова Дарья Михайловна</fullName><email>sokolova@example.com</email><phone>+375251101122</phone><registrationDate>2025-09-19</registrationDate><active>true</active></reader>
+    <reader id="11"><fullName>Орлов Никита Сергеевич</fullName><email>orlov@example.com</email><phone>+375252202233</phone><registrationDate>2025-09-21</registrationDate><active>true</active></reader>
+    <reader id="12"><fullName>Зайцева Полина Ильинична</fullName><email>zaitseva@example.com</email><phone>+375253303344</phone><registrationDate>2025-09-23</registrationDate><active>true</active></reader>
+    <reader id="13"><fullName>Мельник Кирилл Антонович</fullName><email>melnik@example.com</email><phone>+375254404455</phone><registrationDate>2025-09-25</registrationDate><active>true</active></reader>
+    <reader id="14"><fullName>Романова София Евгеньевна</fullName><email>romanova@example.com</email><phone>+375255505566</phone><registrationDate>2025-09-27</registrationDate><active>true</active></reader>
+    <reader id="15"><fullName>Белов Андрей Константинович</fullName><email>belov@example.com</email><phone>+375256606677</phone><registrationDate>2025-09-29</registrationDate><active>true</active></reader>
+  </readers>
+  <books>
+    <book id="1"><title>Мастер и Маргарита</title><author>Михаил Булгаков</author><isbn>978-5-17-118366-6</isbn><publicationYear>1967</publicationYear><status>ISSUED</status></book>
+    <book id="2"><title>Чистый код</title><author>Роберт Мартин</author><isbn>978-5-4461-0960-9</isbn><publicationYear>2008</publicationYear><status>ISSUED</status></book>
+    <book id="3"><title>Война и мир</title><author>Лев Толстой</author><isbn>978-5-389-06256-6</isbn><publicationYear>1869</publicationYear><status>ISSUED</status></book>
+    <book id="4"><title>Java. Полное руководство</title><author>Герберт Шилдт</author><isbn>978-5-6040723-5-2</isbn><publicationYear>2022</publicationYear><status>ISSUED</status></book>
+    <book id="5"><title>Совершенный код</title><author>Стив Макконнелл</author><isbn>978-5-7502-0064-1</isbn><publicationYear>2004</publicationYear><status>ISSUED</status></book>
+    <book id="6"><title>Преступление и наказание</title><author>Фёдор Достоевский</author><isbn>978-5-389-06245-0</isbn><publicationYear>1866</publicationYear><status>LOST</status></book>
+    <book id="7"><title>Effective Java</title><author>Joshua Bloch</author><isbn>978-0-13-468599-1</isbn><publicationYear>2018</publicationYear><status>AVAILABLE</status></book>
+    <book id="8"><title>Отцы и дети</title><author>Иван Тургенев</author><isbn>978-5-389-07406-4</isbn><publicationYear>1862</publicationYear><status>AVAILABLE</status></book>
+    <book id="9"><title>Паттерны объектно-ориентированного проектирования</title><author>Эрих Гамма</author><isbn>978-5-4461-1595-2</isbn><publicationYear>1994</publicationYear><status>AVAILABLE</status></book>
+    <book id="10"><title>Анна Каренина</title><author>Лев Толстой</author><isbn>978-5-389-06244-3</isbn><publicationYear>1878</publicationYear><status>AVAILABLE</status></book>
+    <book id="11"><title>Spring в действии</title><author>Крейг Уоллс</author><isbn>978-5-4461-1434-4</isbn><publicationYear>2022</publicationYear><status>AVAILABLE</status></book>
+    <book id="12"><title>Герой нашего времени</title><author>Михаил Лермонтов</author><isbn>978-5-389-07730-0</isbn><publicationYear>1840</publicationYear><status>AVAILABLE</status></book>
+    <book id="13"><title>Рефакторинг</title><author>Мартин Фаулер</author><isbn>978-5-4461-1596-9</isbn><publicationYear>2019</publicationYear><status>AVAILABLE</status></book>
+    <book id="14"><title>Евгений Онегин</title><author>Александр Пушкин</author><isbn>978-5-389-07408-8</isbn><publicationYear>1833</publicationYear><status>AVAILABLE</status></book>
+    <book id="15"><title>Алгоритмы. Построение и анализ</title><author>Томас Кормен</author><isbn>978-5-8459-2016-4</isbn><publicationYear>2022</publicationYear><status>AVAILABLE</status></book>
+  </books>
+  <loans>
+    <loan id="1"><readerId>1</readerId><bookId>1</bookId><issueDate>2026-10-20</issueDate><dueDate>2026-11-10</dueDate><status>ACTIVE</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="2"><readerId>2</readerId><bookId>2</bookId><issueDate>2026-10-01</issueDate><dueDate>2026-10-22</dueDate><status>OVERDUE</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="3"><readerId>3</readerId><bookId>3</bookId><issueDate>2026-10-25</issueDate><dueDate>2026-11-15</dueDate><status>ACTIVE</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="4"><readerId>4</readerId><bookId>4</bookId><issueDate>2026-10-10</issueDate><dueDate>2026-10-31</dueDate><status>OVERDUE</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="5"><readerId>6</readerId><bookId>5</bookId><issueDate>2026-10-28</issueDate><dueDate>2026-11-18</dueDate><status>ACTIVE</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="6"><readerId>7</readerId><bookId>7</bookId><issueDate>2026-08-01</issueDate><dueDate>2026-08-22</dueDate><returnDate>2026-08-20</returnDate><status>RETURNED</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="7"><readerId>8</readerId><bookId>8</bookId><issueDate>2026-08-05</issueDate><dueDate>2026-08-26</dueDate><returnDate>2026-08-29</returnDate><status>RETURNED</status><fineAmount>4.50</fineAmount></loan>
+    <loan id="8"><readerId>9</readerId><bookId>9</bookId><issueDate>2026-08-10</issueDate><dueDate>2026-08-31</dueDate><returnDate>2026-08-31</returnDate><status>RETURNED</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="9"><readerId>10</readerId><bookId>10</bookId><issueDate>2026-08-15</issueDate><dueDate>2026-09-05</dueDate><returnDate>2026-09-12</returnDate><status>RETURNED</status><fineAmount>10.50</fineAmount></loan>
+    <loan id="10"><readerId>11</readerId><bookId>11</bookId><issueDate>2026-08-20</issueDate><dueDate>2026-09-10</dueDate><returnDate>2026-09-08</returnDate><status>RETURNED</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="11"><readerId>12</readerId><bookId>12</bookId><issueDate>2026-09-01</issueDate><dueDate>2026-09-22</dueDate><returnDate>2026-09-25</returnDate><status>RETURNED</status><fineAmount>4.50</fineAmount></loan>
+    <loan id="12"><readerId>13</readerId><bookId>13</bookId><issueDate>2026-09-05</issueDate><dueDate>2026-09-26</dueDate><returnDate>2026-09-20</returnDate><status>RETURNED</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="13"><readerId>14</readerId><bookId>14</bookId><issueDate>2026-09-10</issueDate><dueDate>2026-10-01</dueDate><returnDate>2026-10-02</returnDate><status>RETURNED</status><fineAmount>1.50</fineAmount></loan>
+    <loan id="14"><readerId>15</readerId><bookId>15</bookId><issueDate>2026-09-15</issueDate><dueDate>2026-10-06</dueDate><returnDate>2026-10-06</returnDate><status>RETURNED</status><fineAmount>0.00</fineAmount></loan>
+    <loan id="15"><readerId>1</readerId><bookId>6</bookId><issueDate>2026-07-01</issueDate><dueDate>2026-07-22</dueDate><returnDate>2026-08-01</returnDate><status>RETURNED</status><fineAmount>15.00</fineAmount></loan>
+  </loans>
+</library>
